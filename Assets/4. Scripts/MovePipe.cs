@@ -10,6 +10,6 @@ public class MovePipe : MonoBehaviour
 
     void Update()
     {
-        transform.position += Vector3.left * speed;
+        transform.position += Vector3.left * speed* Time.deltaTime;
     }
 }

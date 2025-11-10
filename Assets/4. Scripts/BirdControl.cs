@@ -28,5 +28,10 @@ public class BirdControl : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0, 0, rb.velocity.y * rotateSpeed);
     }
-    
+
+    void OCollisionEnter2D(Collision2D collision)
+    {
+        GameManager.Instance.GameOver();
+    }
+
 }
